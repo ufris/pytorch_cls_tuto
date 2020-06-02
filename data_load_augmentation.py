@@ -9,6 +9,7 @@ import numpy as np
 from skimage import io, transform
 from PIL import Image
 
+
 class myOwnDataset(torch.utils.data.Dataset):
     def __init__(self, root, img_list, target,transforms=None):
         self.root = root
