@@ -11,10 +11,10 @@ import torch.optim as optim
 from data_load_augmentation import myOwnDataset
 import torchsummary as summary
 
-input_path = "/media/crescom2/DATA/dataset/alien_vs_predator_thumbnails/data/"
+input_path = "/media/j/DATA/dataset/alien_vs_predator_thumbnails/data/"
 
-dog_path = '/media/crescom2/DATA/dataset/dog_cat/all_dog_cat/dog' + '/'
-cat_path = '/media/crescom2/DATA/dataset/dog_cat/all_dog_cat/cat' + '/'
+dog_path = '/media/j/DATA/dataset/dog_cat/all_dog_cat/dog' + '/'
+cat_path = '/media/j/DATA/dataset/dog_cat/all_dog_cat/cat' + '/'
 
 dog_list = ['dog/' + i for i in os.listdir(dog_path)]
 cat_list = ['cat/' + i for i in os.listdir(cat_path)]
@@ -97,8 +97,8 @@ data_transforms = {
     ]),
 }
 
-my_dataset = myOwnDataset(root='/media/crescom2/DATA/dataset/dog_cat/all_dog_cat',transforms=data_transforms['train'],img_list=train_img_list[:1000],target=train_target_list[:1000])
-val_my_dataset = myOwnDataset(root='/media/crescom2/DATA/dataset/dog_cat/all_dog_cat',transforms=data_transforms['validation'],img_list=val_img_list[:1000],target=val_target_list[:1000])
+my_dataset = myOwnDataset(root='/media/j/DATA/dataset/dog_cat/all_dog_cat',transforms=data_transforms['train'],img_list=train_img_list[:1000],target=train_target_list[:1000])
+val_my_dataset = myOwnDataset(root='/media/j/DATA/dataset/dog_cat/all_dog_cat',transforms=data_transforms['validation'],img_list=val_img_list[:1000],target=val_target_list[:1000])
 
 dataloaders = {
     'train':
