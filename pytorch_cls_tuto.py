@@ -11,7 +11,7 @@ import torch.optim as optim
 from data_load_augmentation import myOwnDataset
 import torchsummary as summary
 
-input_path = "/media/j/DATA/dataset/alien_vs_predator_thumbnails/data/"
+# input_path = "/media/j/DATA/dataset/alien_vs_predator_thumbnails/data/"
 
 dog_path = '/media/j/DATA/dataset/dog_cat/all_dog_cat/dog' + '/'
 cat_path = '/media/j/DATA/dataset/dog_cat/all_dog_cat/cat' + '/'
