@@ -1,2 +1,2 @@
-# pytorch_cls_tuto
-pytorch classification tutorial using own dataset
+# pytorch_tuto
+pytorch classification / segmentation tutorial using own dataset
